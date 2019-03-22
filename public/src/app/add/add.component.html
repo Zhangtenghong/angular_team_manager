@@ -1,0 +1,7 @@
+<h3>Add Player</h3>
+<p class="error" *ngFor="let e of errorMessages">{{e}}</p>
+<form (submit)="addPlayer()">
+  <p>Player Name: <input type="text" name="newPlayer.name" [(ngModel)]="newPlayer.name"></p>
+  <p>Preferred Position: <input type="text" name="newPlayer.position" [(ngModel)]="newPlayer.position"></p>
+  <button>Add Player</button>
+</form>

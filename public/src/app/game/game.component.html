@@ -1,0 +1,13 @@
+<h4>Game {{gameNumber}}</h4>
+<table class="table table-striped">
+  <tr>
+    <th>Player Name</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let p of allPlayers">
+    <td>{{p.name}}</td>
+    <td><button (click)="changeStatus(p._id, 'Playing')" [ngClass]="{'playing': p[currentKey]=='Playing'}">Playing</button>
+      <button (click)="changeStatus(p._id, 'Not Playing')" [ngClass]="{'not-playing': p[currentKey]=='Not Playing'}">Not Playing</button>
+      <button (click)="changeStatus(p._id, 'Undecided')" [ngClass]="{'undecided': p[currentKey]=='Undecided'}">Undecided</button></td>
+  </tr>
+</table>

@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+div.links{
+    text-align: center;
+    margin-bottom:50px;
+}
+div.content-area{
+    width:80%;
+    margin: 0 auto;
+    background: white;
+    padding:50px;
+}
+.wrapper{
+    padding:5rem;
+    background:#efefef;
+}
